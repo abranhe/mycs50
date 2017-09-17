@@ -1,2 +1,2 @@
-# Harvar CS50 
+# Harvard CS50 
 Vist https://cs50.harvard.edu
