@@ -1,3 +1,16 @@
+/*
+*
+*   greedy.c Implement a program that calculates the minimum
+*   number of coins required to give a user change.
+*   
+*   Author: Carlos Abraham Hernandez, www.19cah.com
+*	
+*  	 twitter.com/19cah    github.com/19cah
+*  	 facebook.com/19cah   stackoverflow.com/story/19cah
+*	 instagram.com/19cah  linkedin.com/in/19cah
+*	 bitbucket.org/19cah  repl.it/@19cah
+*
+*/
 #include <stdio.h>
 #include <math.h>  // to use round()
 #include <cs50.h> //include cs50 library
