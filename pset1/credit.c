@@ -1,3 +1,16 @@
+/*
+*
+*   credit.c Iplement a program that determines whether 
+*   a provided credit card number is valid according to Luhn’s algorithm.
+*   
+*   Author: Carlos Abraham Hernandez, www.19cah.com
+*	
+*  	 twitter.com/19cah    github.com/19cah
+*  	 facebook.com/19cah   stackoverflow.com/story/19cah
+*	 instagram.com/19cah  linkedin.com/in/19cah
+*	 bitbucket.org/19cah  repl.it/@19cah
+*
+*/
 #include <stdio.h>
 #include <cs50.h> //include cs50 library to use "get_long_long();"
 
