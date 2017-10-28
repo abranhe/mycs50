@@ -1,2 +1,2 @@
 # Harvard CS50 
-Vist https://cs50.harvard.edu
+Vist [cs50.harvard.edu](https://cs50.harvard.edu)
