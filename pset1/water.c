@@ -3,7 +3,7 @@
 *  	Water.c takes an input in minutes: How long have you been taking a shower?
 *   and output how many bottles of water did you use
 *   
-*   Author: Carlos Abraham Hernandez, www.19cah.ml
+*    Author: Carlos Abraham Hernandez, www.19cah.ml
 *	
 *  	 twitter.com/19cah    github.com/19cah
 *  	 facebook.com/19cah	  stackoverflow.com/story/19cah
