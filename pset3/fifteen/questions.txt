@@ -1,0 +1,4 @@
+0. The minimum is 3 x 3 and the maximum is 9 x 9 and the dimensions are defined upfront by the pre-processor.
+1. The game board is represented in an array of arrays.
+2. 'greet' function is called to greet the player at gamer's start.
+3. I would need to implement 'int', 'draw', 'move' and 'won' functions.

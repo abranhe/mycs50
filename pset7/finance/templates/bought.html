@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Congratulations.
+{% endblock %}
+
+{% block main %}
+    You have successfully bought the following shares! <br/><br/>
+    
+    symbol: {{ symbol }} <br/>
+    name: {{ name }} <br/>
+    price: {{ price }} <br/>
+    number of shares bought: {{ shares }}<br/>
+    total cost paid: {{ paid }}<br/><br/>
+    
+    You have {{ cash }} left now.<br/>
+    <br/>
+    Click <a href={{ url_for('buy') }}>here</a> to continue buying. Happy shopping but makes sure you have enough cash! :)
+    
+{% endblock %}

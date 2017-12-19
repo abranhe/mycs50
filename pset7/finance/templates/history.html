@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History.
+{% endblock %}
+
+{% block main %}
+{% if sn %}
+    You are holding the following shares. <br/><br/>
+    <table border=1 align='center'>
+        <tr>
+            <td>
+                S/N
+            </td>
+            <td>
+                Date Time
+            </td>
+            <td>
+                Bought/Sold
+            </td>
+            <td>
+                Symbol
+            </td>
+            <td>
+                Name
+            </td>
+            <td>
+                Number of shares
+            </td>
+            <td>
+                Price
+            </td>
+            <td>
+                Total ($)
+            </td>
+        </tr>
+        {% for stock in stocks %}
+        <tr>
+            <td>
+                {{ stock["sn"] }}
+            </td>
+            <td>
+                {{ stock["datetime"] }}
+            </td>
+            <td>
+                {{ stock["nature"] }}
+            </td>
+            <td>
+                {{ stock["symbol"] }}
+            </td>
+            <td>
+                {{ stock["name"] }}
+            </td>
+            <td>
+                {{ stock["shares"] }}
+            </td>
+            <td>
+                {{ stock["price"] }}
+            </td>
+            <td>
+                {{ stock["total"] }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    You have no transactions.
+{% endif %}
+    
+{% endblock %}

@@ -1,0 +1,21 @@
+Table 'purchases' has been created.
+CREATE TABLE 'purchases' ('id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+                            'user_id' INTEGER NOT NULL, 
+                            'symbol' TEXT NOT NULL, 
+                            'shares' INTEGER NOT NULL, 
+                            'price' REAL NOT NULL, 
+                            'datetime' DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP)
+                            
+CREATE INDEX 'symbol' ON "purchases" ("user_id" ASC, "symbol" ASC)
+
+# look up total number of shares
+SELECT sum(shares) FROM "purchases" WHERE symbol="YHOO" AND user_id=2 GROUP BY symbol
+
+ALTER TABLE "purchases" RENAME TO 'transactions'
+
+CREATE TABLE 'stock' ('id' INTEGER NOT NULL, 
+                        'name' TEXT NOT NULL, 
+                        'symbol' TEXT NOT NULL, 
+                        'created' DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+                        'modified' DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+                        PRIMARY KEY ('id', 'name', 'symbol', 'created', 'modified'))

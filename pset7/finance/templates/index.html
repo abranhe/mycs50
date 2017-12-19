@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your holdings.
+{% endblock %}
+
+{% block main %}
+{% if stockexists %}
+    You are holding the following shares. <br/><br/>
+    <table border=1 align='center'>
+        <tr>
+            <td>
+                Symbol
+            </td>
+            <td>
+                Name
+            </td>
+            <td>
+                Number of shares
+            </td>
+            <td>
+                Current price
+            </td>
+            <td>
+                Total ($)
+            </td>
+        </tr>
+        {% for stock in stocks %}
+        <tr>
+            <td>
+                {{ stock["symbol"] }}
+            </td>
+            <td>
+                {{ stock["name"] }}
+            </td>
+            <td>
+                {{ stock["shares"] }}
+            </td>
+            <td>
+                {{ stock["price"] }}
+            </td>
+            <td>
+                {{ stock["total"] }}
+            </td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td align="right">
+                <b>{{ grandtotal }}</b>
+            </td>
+        </tr>
+    </table>
+{% else %}
+    You are not holding any shares.
+{% endif %}
+    
+{% endblock %}

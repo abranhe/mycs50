@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Looking up the stock price for {{ name }}
+{% endblock %}
+
+{% block main %}
+    Stock's name: {{ name }}
+    <br/>
+    Price: {{ price }}
+    <br/>
+    Symbol: {{ symbol }}
+    <br/>
+{% endblock %}

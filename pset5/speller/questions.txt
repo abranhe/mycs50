@@ -1,0 +1,7 @@
+0.  an invented long word said to mean a lung disease caused by inhaling very fine ash and sand dust.
+1.  returns resource usage measures
+2.  16
+3.  getrusage function requires that the pointers to the struct rusage be passed in instead of the values
+4.  The loop iterates through every character in the text. If it encounters an alphabet or apostrophe, it starts a new word, putting character by character in a variable named word. If the length gets more than LENGTH (45), then it skips over the word and reset the index. If it encounters a number that is part of the word, it skips over the number and reset the index too. If it hits \0, it found a new word and start checking the word’s spelling and prints it if it’s misspelled then reset the index and continue finding the next word over and over again.
+5.  fscanf may not be able to read numbers and special characters in the text, causing some error.
+6.  to prevent the script from modifying the value passed in as the parameter.

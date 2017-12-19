@@ -1,0 +1,12 @@
+1.  The header file provides variations of integers for use on top of the built-in integer which is fixed at 32-bit only.
+2.  Using these allows the integer to be set at size smaller than the default 32-bit. For BMP file where integers are in bits other than 32-bit, the built-in integer would not be suitable.
+3.  1, 4, 4, 2
+4.  'BM' in ASCII, '0x42' in Hexadecimal
+5.  bfSize is the size of the BMP file in bytes. biSize is the size of bitmap info header which is usually 40 bytes.
+6.  It means the image is top-down as opposed to bottom-up if biHeight is positive.
+7.  biBitCount.
+8.  If the code is unable to find or create a file for e.g. insufficient space or permission, fopen may return NULL.
+9.  The third argument to fread is the number of data elements to read from the file of which the size of each data element specified in the second argument. To set the 3rd argument as 1 means to read BITMAPFILEHEADER or BITMAPINFOHEADER only once.
+10. 3.
+11. fseek skips over the padding when reading the file so that it doesn't extract the meaningless bytes from the file's padding.
+12. SEEK_CUR is an integer that indicates the current position of the file pointer.
